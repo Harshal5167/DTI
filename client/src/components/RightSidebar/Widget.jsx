@@ -7,7 +7,7 @@ import "./RightSidebar.css";
 const Widget = () => {
   return (
     <div className="widget">
-      <h4>The Overflow Blog</h4>
+      <h4>The DTI Blog</h4>
       <div className="right-sidebar-div-1">
         <div className="right-sidebar-div-2">
           <img src={pen} alt="pen" width="18" />
@@ -36,7 +36,7 @@ const Widget = () => {
         <div className="right-sidebar-div-2">
           <img src={blackLogo} alt="pen" width="18" />
           <p>
-            Outdated Answers: accepted answer is now unpinned on Stack Overflow
+            Outdated Answers: accepted answer is now unpinned on DTI Project
           </p>
         </div>
       </div>

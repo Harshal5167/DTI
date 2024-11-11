@@ -7,63 +7,63 @@ const Tags = () => {
   const tagsList = [
     {
       id: 1,
-      tagName: "javascript",
+      tagName: "stress_management",
       tagDesc:
-        "For questions regarding programming in ECMAScript (JavaScript/JS) and its various dialects/implementations (excluding ActionScript). Please include all relevant tags on your question;",
+        "For questions about managing stress related to academics, social life, or personal challenges in college. Alumni and peers can share their experiences and coping strategies.",
     },
     {
       id: 2,
-      tagName: "python",
+      tagName: "time_management",
       tagDesc:
-        "Python is a multi-paradigm, dynamically typed, multipurpose programming language. It is designed to be quick to learn, understand, and use, and enforces a clean and uniform syntax.",
+        "Questions and advice on balancing academic workload, extracurricular activities, and personal life. Tips for effective time management techniques and tools.",
     },
     {
       id: 3,
-      tagName: "c#",
+      tagName: "relationships",
       tagDesc:
-        "C# (pronounced 'see sharp') is a high level, statically typed, multi-paradigm programming language developed by Microsoft",
+        "Guidance on building and maintaining healthy relationships with friends, family, or partners while navigating college life.",
     },
     {
       id: 4,
-      tagName: "java",
+      tagName: "career_confusion",
       tagDesc:
-        "Java is a high-level object oriented programming language. Use this tag when you're having problems using or understanding the language itself. ",
+        "Questions about career choices, finding the right field, or dealing with uncertainty in career paths. Alumni can offer insights from their own journeys.",
     },
     {
       id: 5,
-      tagName: "php",
+      tagName: "academic_pressure",
       tagDesc:
-        "PHP is a widely used, open source, general-purpose, multi-paradigm, dynamically typed and interpreted scripting language originally designed for server-side web development",
+        "For students dealing with academic pressure, exam stress, or fear of failure. Advice and strategies for handling high academic expectations.",
     },
     {
       id: 6,
-      tagName: "html",
+      tagName: "mental_wellbeing",
       tagDesc:
-        "HTML (HyperText Markup Language) is the markup language for creating web pages and other information to be displayed in a web browser.",
+        "General discussions on mental health, including mindfulness practices, self-care routines, and maintaining a positive outlook during challenging times.",
     },
     {
       id: 7,
-      tagName: "android",
+      tagName: "homesickness",
       tagDesc:
-        "Android is Google's mobile operating system, used for programming or developing digital devices (Smartphones, Tablets, Automobiles, TVs, Wear, Glass, IoT).",
+        "Support and advice for students experiencing homesickness or adjusting to a new environment away from home.",
     },
     {
       id: 8,
-      tagName: "css",
+      tagName: "self_esteem",
       tagDesc:
-        "CSS is a representation style sheet language used for describing the look and formatting of HTML, XML documents and SVG elements including colors, layout, fonts, and animations",
+        "Questions about building self-confidence, overcoming self-doubt, and managing feelings of inadequacy. Alumni can share personal growth tips.",
     },
     {
       id: 9,
-      tagName: "Reactjs",
+      tagName: "financial_stress",
       tagDesc:
-        "React is a JavaScript library for building user interfaces. It uses a declarative, component-based paradigm and aims to be both efficient and flexible.",
+        "Advice on handling financial worries, budgeting tips, and guidance on part-time work or scholarships.",
     },
     {
       id: 10,
-      tagName: "node.js",
+      tagName: "loneliness",
       tagDesc:
-        "Node.js is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library. ",
+        "For students who feel isolated or struggle with making new connections in college. Peers and alumni can offer social support tips.",
     },
   ];
 

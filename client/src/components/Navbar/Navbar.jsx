@@ -35,9 +35,7 @@ const Navbar = () => {
   return (
     <nav className="main-nav">
       <div className="navbar">
-        <Link to="/" className="nav-item nav-btn">
-          <img src={logo} alt="logo" />
-        </Link>
+        <h1>DTI PROJECT</h1>
         <Link to="/" className="nav-item mid-nav-item nav-btn">
           About
         </Link>

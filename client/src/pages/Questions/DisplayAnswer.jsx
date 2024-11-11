@@ -48,7 +48,7 @@ const DisplayAnswer = ({ question, handleShare }) => {
                 >
                   {ans.userAnswered.charAt(0).toUpperCase()}
                 </Avatar>
-                <div>{ans.userAnswered}</div>
+                <div>{ans.userAnswered+" (Alumni, IIITA)"}</div>
               </Link>
             </div>
           </div>
