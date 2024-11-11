@@ -11,6 +11,7 @@ const Auth = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isAlumni, setIsAlumni] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -23,7 +24,7 @@ const Auth = () => {
       if (!name) {
         alert("Enter a name to continue");
       }
-      dispatch(signup({ name, email, password }, navigate));
+      dispatch(signup({ name, email, password, isAlumni }, navigate));
       console.log({ name, email, password });
     } else {
       dispatch(login({ email, password }, navigate));
@@ -98,10 +99,13 @@ const Auth = () => {
           </label>
           {isSignup && (
             <label htmlFor="check">
-              <input type="checkbox" id="check" />
+              <input
+                type="checkbox"
+                id="check"
+                onChange={(e) => setIsAlumni(e.target.checked)}
+              />
               <p style={{ fontSize: "13px" }}>
-                Opt-in to receive occasional, product updates, user research
-                invitations, company announcements and digests.
+                Are you an alumni of this institution?{" "}
               </p>
             </label>
           )}

@@ -5,6 +5,9 @@ export const postAnswer = async (req, res) => {
   const { id: _id } = req.params;
   const { noOfAnswers, answerBody, userAnswered } = req.body;
   const userId = req.userId;
+  if(!req.isAlumni){
+    return res.status(401).json("You are not authorized to post answer...");
+  }
   if (!mongoose.Types.ObjectId.isValid(_id)) {
     return res.status(404).send("question unavailable...");
   }

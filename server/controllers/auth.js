@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/auth.js";
 
 export const signup = async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, isAlumni } = req.body;
   try {
     const existinguser = await User.findOne({ email });
     if (existinguser) {
@@ -13,10 +13,11 @@ export const signup = async (req, res) => {
     const newUser = await User.create({
       name,
       email,
+      isAlumni,
       password: hashedPassword,
     });
     const token = jwt.sign(
-      { email: newUser.email, id: newUser._id },
+      { email: newUser.email, id: newUser._id, isAlumni: isAlumni },
       process.env.JWT_SECRET,
       {
         expiresIn: "1h",
@@ -39,8 +40,9 @@ export const login = async (req, res) => {
     if (!isPasswordCrt) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
+    const isAlumni=existinguser.isAlumni;
     const token = jwt.sign(
-      { email: existinguser.email, id: existinguser._id },
+      { email: existinguser.email, id: existinguser._id , isAlumni: isAlumni},
       process.env.JWT_SECRET,
       { expiresIn: "1h" }
     );
