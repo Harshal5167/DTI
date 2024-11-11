@@ -6,7 +6,7 @@ import "./RightSidebar.css";
 const RightSidebar = () => {
   return (
     <aside className="right-sidebar">
-      <Widget />
+      {/* <Widget /> */}
       <WidgetTags />
     </aside>
   );

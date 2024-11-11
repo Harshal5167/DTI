@@ -22,7 +22,7 @@ const QuestionsDetails = () => {
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();
-  const url = "https://stackoverflow-mukesh.netlify.app/#";
+  const url = "https://localhost:3000";
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault();
@@ -176,7 +176,7 @@ const QuestionsDetails = () => {
                       </div>
                       <div>
                         <p>asked {moment(question.askedOn).fromNow()}</p>
-                        <Link
+                        {/* <Link
                           to={`/Users/${question.userId}`}
                           className="user-link"
                           style={{ color: "#0086d8" }}
@@ -190,7 +190,7 @@ const QuestionsDetails = () => {
                             {question.userPosted.charAt(0).toUpperCase()}
                           </Avatar>
                           <div>{question.userPosted}</div>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>

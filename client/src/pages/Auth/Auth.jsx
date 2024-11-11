@@ -40,7 +40,7 @@ const Auth = () => {
       {isSignup && <AboutAuth />}
       <div className="auth-container-2">
         {!isSignup && (
-          <img src={icon} alt="stackoverflow" className="login-logo" />
+          <img src={icon} alt="dti-project" className="login-logo" />
         )}
         <form onSubmit={handleSubmit}>
           {isSignup && (
