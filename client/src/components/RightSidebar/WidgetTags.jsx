@@ -2,22 +2,16 @@ import React from "react";
 
 const WidgetTags = () => {
   const tags = [
-    "c",
-    "css",
-    "express",
-    "firebase",
-    "html",
-    "java",
-    "javascript",
-    "mern",
-    "mongodb",
-    "mysql",
-    "next.js",
-    "node.js",
-    "php",
-    "python",
-    "react.js",
-    "express.js",
+    "stress_management",
+    "time_management",
+    "academic_pressure",
+    "career_confusion",
+    "self_esteem",
+    "loneliness",
+    "relationships",
+    "mental_wellbeing",
+    "financial_stress",
+    "homesickness",
   ];
 
   return (
