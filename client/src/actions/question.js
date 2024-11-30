@@ -51,7 +51,8 @@ export const postAnswer = (answerData) => async (dispatch) => {
     dispatch({ type: "POST_ANSWER", payload: data });
     dispatch(fetchAllQuestions());
   } catch (error) {
-    console.log(error);
+    if (error?.request?.status === 401) alert("You are not an alumni to answer this question");
+    else console.log(error);
   }
 };
 
